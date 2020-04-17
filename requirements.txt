@@ -1,0 +1,4 @@
+opencv-python==4.2.0.34
+PyYAML==5.3
+trafaret==2.0.2
+dvc[gs]

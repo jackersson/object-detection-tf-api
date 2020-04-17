@@ -1,0 +1,4 @@
+[core]
+    remote = gcloud
+['remote "gcloud"']
+    url = gs://lifestyletransfer/object-detection-tf-api

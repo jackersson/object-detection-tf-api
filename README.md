@@ -25,7 +25,13 @@ dvc pull
 ```bash
 export TF_CPP_MIN_LOG_LEVEL=5  # to avoid TF logs
 
+
+# just object detection
 python detect.py -s data/images/normal.jpg -c configs/tf_object_api_cfg.yml -p "[0,0], [0,1], [1,1], [1,0]" -a 0.0001
+
+# with masks
+python detect.py -s data/images/normal.jpg -c configs/tf_object_api_cfg_masks.yml -p "[0,0], [0,1], [1,1], [1,0]" -a 0.0001
+
 ```
 - **Note**: [model's config explained](https://github.com/jackersson/gst-plugins-tf/blob/master/docs/tf_object_detection_model_config.md)
 

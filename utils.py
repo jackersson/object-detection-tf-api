@@ -192,7 +192,7 @@ class TfObjectDetectionModel(object):
                                   per_process_gpu_memory_fraction=self.config['per_process_gpu_memory_fraction'])
 
         graph = import_graph(parse_graph_def(self.config['weights']), self.config['device'])
-        has_masks = self.output_tensors['masks'] in set([n.name for n in graph.as_graph_def().node])
+        has_masks = self.output_tensors['masks'].replace(":0", "") in set([n.name for n in graph.as_graph_def().node])
 
         self.log.debug("Model (%s) placed on %s", self.config['weights'], self.config['device'])
 

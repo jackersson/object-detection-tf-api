@@ -1,7 +1,7 @@
 ## Description
 - simple object detection in specific area (polygon) for models from [TF API Model ZOO](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models)
 
-![example]()
+![example](https://github.com/jackersson/object-detection-tf-api/blob/master/data/example.jpg)
 
 ## Installation
 ```bash
